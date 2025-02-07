@@ -20,6 +20,6 @@ A quantitative vector
 myf function
 }
 \examples{
-\dontrun { myf(2,2,c(2,3,4)) }
+myf(2,2,c(2,3,4))
 
 }
