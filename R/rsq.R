@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' rsq(20,spruce.df)
+#' \dontrun{ rsq(20,spruce.df) }
 #'
 rsq = function(xk,data){
   df=within(data, X<-(BHDiameter-xk)*(BHDiameter>xk))
