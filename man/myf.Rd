@@ -11,7 +11,7 @@ myf(x, xk, coef)
 
 \item{xk}{one quantitative vector}
 
-\item{coef}{one quantitative vector}
+\item{coef}{quantitative vectors}
 }
 \value{
 A quantitative vector
@@ -20,6 +20,6 @@ A quantitative vector
 myf function
 }
 \examples{
-\dontrun{ myf(2,2,3) }
+\dontrun { myf(2,2,c(2,3,4)) }
 
 }
