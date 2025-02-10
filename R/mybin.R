@@ -2,13 +2,13 @@
 #'
 #' @param iter one quantitative vector
 #' @param n one quantitative vector
-#' @param p quantitative vectors
+#' @param p quantitative vector
 #'
 #' @returns A quantitative vector
 #' @export
 #'
 #' @examples
-#'
+#' mybin(100,10,0.5)
 #'
 
 mybin = function(iter,n,p){
