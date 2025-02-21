@@ -12,6 +12,7 @@
 #'
 
 myncurve = function(mu, sigma, a){
+  x<-c()
   graphics::curve(stats::dnorm(x, mean = mu, sd = sigma),
         xlim = c(mu - 3 * sigma, mu + 3 * sigma),
         col = "blue", lwd = 2)
