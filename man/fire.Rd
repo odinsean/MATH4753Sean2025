@@ -13,7 +13,7 @@ A data frame with 15 rows and 2 columns:
 }
 }
 \source{
-\url {https://www.crcpress.com/statistics-for-Engineering-and-the-sciences/Mendenhall-Sinich/p/book/978149872850}
+<https://www.crcpress.com/statistics-for-Engineering-and-the-sciences/Mendenhall-Sinich/p/book/978149872850>
 }
 \usage{
 fire

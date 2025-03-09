@@ -8,5 +8,5 @@
 #' \item{DAMAGE}{A number}
 #' ...
 #' }
-#' @source \url {https://www.crcpress.com/statistics-for-Engineering-and-the-sciences/Mendenhall-Sinich/p/book/978149872850}
+#' @source <https://www.crcpress.com/statistics-for-Engineering-and-the-sciences/Mendenhall-Sinich/p/book/978149872850>
   "fire"

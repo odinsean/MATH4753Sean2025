@@ -3,3 +3,4 @@
 export(myf)
 export(myncurve)
 export(mysq)
+export(ntickets)
