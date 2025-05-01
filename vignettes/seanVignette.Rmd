@@ -1,0 +1,92 @@
+---
+title: "What the package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753Sean2025)
+```
+
+# introduction
+
+This vignette demonstrates the functionality of the MATH4753Sean2025 package, which functions such as myboot2, mymlnorm, myncurve, myclt, ntickets, myf, mysq and the dataset FIREDAM
+
+# FIREDAM Dataset
+
+```{r}
+head(fire)
+```
+
+# myboot2
+
+Compute a 95% bootstrap CI for the median fire damage
+
+```{r}
+set.seed(123)
+boot_result <- myboot2(iter = 1000, x = fire$DAMAGE, fun = median, alpha = 0.05)
+boot_result$ci
+```
+
+# mymlnorm
+
+Fit a normal distribution
+```{r}
+ml_result <- mymlnorm(
+  x = fire$DAMAGE,
+  mu = seq(10, 25, length = 100),
+  sig = seq(3, 8, length = 100)
+)
+```
+
+# myncurve 
+
+Plot a normal curve with mean/sd and shade P(X ≤ 20)
+```{r}
+myncurve(
+  mu = mean(fire$DAMAGE),
+  sigma = sd(fire$DAMAGE),
+  a = 20
+)
+```
+
+# myclt
+
+Simulate sums of uniform variables (n = 50):
+```{r}
+myclt(n = 50, iter = 1000, a = 0, b = 10)
+```
+
+# ntickets
+
+Find optimal tickets sold
+```{r ntickets-example, fig.width=10, fig.height=6}
+ntickets(N = 400, gamma = 0.02, p = 0.95)
+```
+
+# myf
+
+Model fire damage with a knot at 3 miles
+
+```{r}
+coef_example <- c(10, -2, 5)
+myf(x = fire$DISTANCE, xk = 3, coef = coef_example)
+```
+
+# mysq
+
+Takes the square of values
+
+```{r}
+mysq(1:10)
+```
