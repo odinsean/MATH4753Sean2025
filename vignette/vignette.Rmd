@@ -1,21 +1,19 @@
 ---
-title: "What the package does"
+title: "Vignette Title"
+author: "Sean Ropp"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{What the package does}
+  %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-```
-
-```{r setup}
-library(MATH4753Sean2025)
 ```
 
 # introduction
@@ -27,6 +25,7 @@ You can find the github page at https://github.com/odinsean/MATH4753Sean2025
 # FIREDAM Dataset
 
 ```{r}
+library(MATH4753Sean2025)
 head(fire)
 ```
 
