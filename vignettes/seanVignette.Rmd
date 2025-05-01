@@ -20,7 +20,9 @@ library(MATH4753Sean2025)
 
 # introduction
 
-This vignette demonstrates the functionality of the MATH4753Sean2025 package, which functions such as myboot2, mymlnorm, myncurve, myclt, ntickets, myf, mysq and the dataset FIREDAM
+This vignette demonstrates the functionality of the MATH4753Sean2025 package, which functions such as myboot2, mymlnorm, myncurve, myclt, ntickets, myf, mysq and the dataset FIREDAM.
+
+You can find the github page at https://github.com/odinsean/MATH4753Sean2025
 
 # FIREDAM Dataset
 
